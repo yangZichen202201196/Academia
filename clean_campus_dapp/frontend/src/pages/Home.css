@@ -1,0 +1,579 @@
+.home {
+  min-height: 100vh;
+}
+
+.home .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.home-header {
+  margin-bottom: 20px;
+}
+
+.home-header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.home-subtitle {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.welcome-desc {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.points-card-fox {
+  margin-right: 4px;
+}
+
+.points-card-connect {
+  padding: 16px 0;
+}
+.points-card-connect p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+/* 统一积分卡 */
+.home-points-card {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+  box-shadow: 0 10px 40px rgba(16, 185, 129, 0.25);
+}
+
+.points-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.points-card-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.points-card-level {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.9);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.points-card-value {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.points-card-unit {
+  font-size: 14px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  opacity: 0.95;
+}
+
+.points-card-redeem {
+  font-size: 13px;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+.points-card-progress {
+  margin-top: 16px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #fff;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.points-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.points-card-percent {
+  font-weight: 600;
+}
+
+.points-card-bind-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+  font-size: 13px;
+  opacity: 0.95;
+}
+
+.points-card-wallet {
+  word-break: break-all;
+  font-family: ui-monospace, monospace;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.points-card-wallet-label {
+  font-family: inherit;
+  font-size: 12px;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+.points-card-wallet-value {
+  font-family: inherit;
+}
+
+.points-card-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.points-card-copy-text {
+  font-size: 12px;
+}
+
+/* 绑定状态提示条 */
+.home-status-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.18);
+  margin-top: -6px;
+  margin-bottom: 16px;
+}
+
+.home-status-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  background: rgba(16, 185, 129, 0.16);
+  color: #059669;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.home-status-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #065f46;
+}
+
+.home-status-sub {
+  margin-top: 2px;
+  font-size: 12px;
+  color: #059669;
+  opacity: 0.9;
+}
+
+/* 快捷操作 */
+.home-quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.quick-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  min-height: 44px;
+  transition: opacity 0.2s;
+}
+
+.quick-action-btn svg {
+  margin-right: 6px;
+}
+
+.quick-action-btn.primary {
+  background: #10b981;
+  color: #fff;
+}
+
+.quick-action-btn.primary:hover {
+  opacity: 0.9;
+}
+
+.quick-action-btn.outline {
+  background: transparent;
+  color: #10b981;
+  border: 1px solid #10b981;
+}
+
+.quick-action-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.quick-action-hint {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* 新快捷卡片（首页） */
+.home-quick-cards {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.quick-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+  text-decoration: none;
+  color: inherit;
+}
+
+.quick-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: rgba(16, 185, 129, 0.12);
+  color: #059669;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quick-card-icon.streak {
+  background: rgba(245, 158, 11, 0.14);
+  color: #b45309;
+}
+
+.quick-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.quick-card-desc {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.quick-card-primary {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.14), rgba(16, 185, 129, 0.06));
+  border-color: rgba(16, 185, 129, 0.18);
+}
+
+.quick-card-streak-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: #92400e;
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  .home-quick-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .points-card-wallet {
+    width: 100%;
+  }
+
+  .points-card-copy-text {
+    display: none;
+  }
+}
+
+/* 功能入口宫格 */
+.home-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.feature-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 18px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, transform 0.2s;
+  min-height: 44px;
+}
+
+.feature-tile:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.feature-tile-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.feature-tile-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.feature-tile-icon.green {
+  background: rgba(16, 185, 129, 0.15);
+}
+
+.feature-tile-icon.blue {
+  background: rgba(59, 130, 246, 0.15);
+}
+
+.feature-tile-icon.orange {
+  background: rgba(249, 115, 22, 0.15);
+}
+
+.feature-tile-icon.purple {
+  background: rgba(139, 92, 246, 0.15);
+}
+
+.feature-tile-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.feature-tile-desc {
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.feature-tile-arrow {
+  font-size: 14px;
+  color: #10b981;
+  margin-top: auto;
+}
+
+/* 最近动态 */
+.home-activity {
+  margin-bottom: 28px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-item.empty {
+  color: #94a3b8;
+  justify-content: center;
+}
+
+.activity-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  flex-shrink: 0;
+}
+
+.activity-text {
+  flex: 1;
+  color: #334155;
+}
+
+.activity-time {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.activity-more {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #10b981;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.activity-more:hover {
+  text-decoration: underline;
+}
+
+/* 我的成就 */
+.home-achievements {
+  margin-bottom: 24px;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.achievement-badge {
+  background: #fff;
+  border-radius: 16px;
+  padding: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.achievement-badge:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.achievement-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.achievement-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.achievement-desc {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* 未登录 */
+.home .card.welcome-only {
+  text-align: center;
+  padding: 48px 32px;
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.home .card.welcome-only h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 24px;
+}
+
+/* 桌面端：积分卡与快捷操作可一行 */
+@media (min-width: 768px) {
+  .home-header h1 {
+    font-size: 24px;
+  }
+
+  .home-points-card {
+    padding: 28px;
+  }
+
+  .points-card-value {
+    font-size: 42px;
+  }
+
+  .home-quick-actions {
+    flex-direction: row;
+    margin-bottom: 28px;
+  }
+
+  .points-card-meta {
+    flex-wrap: nowrap;
+  }
+}
+
+/* 移动端：功能入口 2 列保持，成就 3 列保持 */
+@media (max-width: 480px) {
+  .home-features {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+}

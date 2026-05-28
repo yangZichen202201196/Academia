@@ -1,0 +1,19 @@
+{
+  "description": "可复制此文件为 seed-data.json，填入自定义数据后运行: node scripts/seed-custom.js",
+  "students": [
+    { "studentId": "2026310101", "name": "陈思远", "college": "计算机科学与技术学院" },
+    { "studentId": "2026310201", "name": "林雨桐", "college": "环境科学与工程学院" }
+  ],
+  "reports": [
+    {
+      "studentId": "2026310101",
+      "behaviorType": "垃圾分类投放",
+      "description": "清园校区东苑宿舍楼下垃圾分类点，可回收与厨余分开投放。",
+      "status": "approved",
+      "points": 10
+    }
+  ],
+  "redeemments": [
+    { "studentId": "2026310101", "rewardId": 1 }
+  ]
+}

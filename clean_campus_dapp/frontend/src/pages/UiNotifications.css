@@ -1,0 +1,256 @@
+/* 全局 Toast / 确认框（与审核中心风格一致） */
+
+.app-toast-host {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 400;
+  pointer-events: none;
+}
+
+.app-toast {
+  pointer-events: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 280px;
+  max-width: min(400px, calc(100vw - 40px));
+  padding: 14px 12px 14px 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.12), 0 2px 10px rgba(15, 23, 42, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.app-toast-accent {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #10b981;
+  border-radius: 12px 0 0 12px;
+}
+
+.app-toast--error .app-toast-accent {
+  background: #ef4444;
+}
+
+.app-toast--info .app-toast-accent {
+  background: #3b82f6;
+}
+
+.app-toast-icon-wrap {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #ecfdf5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-toast--error .app-toast-icon-wrap {
+  background: #fef2f2;
+}
+
+.app-toast--info .app-toast-icon-wrap {
+  background: #eff6ff;
+}
+
+.app-toast-icon {
+  color: #059669;
+}
+
+.app-toast--error .app-toast-icon {
+  color: #dc2626;
+}
+
+.app-toast--info .app-toast-icon {
+  color: #2563eb;
+}
+
+.app-toast-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-toast-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+.app-toast-desc {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.app-toast-hash {
+  margin-top: 8px;
+  font-size: 11px;
+}
+
+.app-toast-hash-link {
+  color: #059669;
+  text-decoration: none;
+}
+
+.app-toast-hash-link:hover {
+  text-decoration: underline;
+}
+
+.app-toast-hash-txt {
+  font-family: ui-monospace, monospace;
+  color: #64748b;
+}
+
+.app-toast-close {
+  flex-shrink: 0;
+  padding: 4px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+  border-radius: 6px;
+  line-height: 0;
+}
+
+.app-toast-close:hover {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+/* 通用确认弹窗 */
+.app-confirm-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 350;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.app-confirm-card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.2);
+}
+
+.app-confirm-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.app-confirm-head-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #d1fae5;
+  color: #059669;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.app-confirm-head-icon.app-confirm-head-icon--danger {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.app-confirm-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.app-confirm-sub {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.app-confirm-message {
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.55;
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+}
+
+.app-confirm-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.app-confirm-cancel {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: #475569;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.app-confirm-cancel:hover {
+  background: #f8fafc;
+}
+
+.app-confirm-submit {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: none;
+  background: #10b981;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+}
+
+.app-confirm-submit:hover {
+  background: #059669;
+}
+
+.app-confirm-submit--danger {
+  background: #ef4444;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.35);
+}
+
+.app-confirm-submit--danger:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 480px) {
+  .app-toast-host {
+    left: 16px;
+    right: 16px;
+    top: 12px;
+  }
+
+  .app-toast {
+    max-width: none;
+  }
+}

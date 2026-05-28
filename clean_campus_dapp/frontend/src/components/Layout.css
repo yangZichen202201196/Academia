@@ -1,0 +1,442 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========== 桌面端：左侧边栏 ========== */
+.layout-sidebar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .layout {
+    flex-direction: row;
+  }
+
+  .layout-sidebar {
+    display: block;
+    width: 220px;
+    min-height: 100vh;
+    background: #fff;
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+  }
+
+  .sidebar-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px 0;
+  }
+
+  .sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 20px 24px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #10b981;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    margin-bottom: 16px;
+  }
+
+  .sidebar-logo-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .sidebar-nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 0 12px;
+  }
+
+  .sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    color: #64748b;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .sidebar-link:hover {
+    background: rgba(16, 185, 129, 0.08);
+    color: #0f766e;
+  }
+
+  .sidebar-link.active {
+    background: rgba(16, 185, 129, 0.12);
+    color: #10b981;
+    border-left: 3px solid #10b981;
+  }
+
+  .sidebar-link-dot {
+    display: none;
+  }
+
+  .sidebar-link-icon {
+    width: 18px;
+    height: 18px;
+    color: inherit;
+  }
+
+  .sidebar-user {
+    padding: 16px 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .sidebar-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #10b981;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .sidebar-user-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+  }
+
+  .sidebar-user-level {
+    font-size: 12px;
+    color: #64748b;
+  }
+
+  .layout-main {
+    margin-left: 220px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .layout-header-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 24px;
+    background: rgba(248, 250, 252, 0.9);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .header-admin-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #10b981;
+    text-decoration: none;
+  }
+
+  .header-admin-link:hover {
+    text-decoration: underline;
+  }
+
+  .layout-topbar {
+    display: none;
+  }
+
+  .layout-bottom-nav {
+    display: none;
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 24px;
+  }
+}
+
+/* ========== 移动端：顶栏 + 底部导航 ========== */
+@media (max-width: 767px) {
+  .layout-sidebar {
+    display: none;
+  }
+
+  .layout-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .topbar-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #10b981;
+    text-decoration: none;
+  }
+
+  .topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .topbar-admin-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: #10b981;
+    text-decoration: none;
+    margin-right: 12px;
+  }
+
+  .topbar-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #10b981;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .topbar-wallet-btn {
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(16, 185, 129, 0.35);
+    background: rgba(16, 185, 129, 0.06);
+    color: #047857;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .layout-main {
+    flex: 1;
+    padding-bottom: 0;
+  }
+
+  .layout-header-actions {
+    display: none;
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 16px;
+    padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px) + 16px);
+  }
+
+  .layout-bottom-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(56px + env(safe-area-inset-bottom, 0px));
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    z-index: 90;
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  .bottom-nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 8px;
+    min-height: 44px;
+    color: #64748b;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+
+  .bottom-nav-item.active {
+    color: #10b981;
+  }
+
+  .bottom-nav-icon {
+    font-size: 20px;
+  }
+
+  .bottom-nav-label {
+    line-height: 1.2;
+  }
+}
+
+/* 开发环境：手机端访问地址条 */
+.layout-mobile-url {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background: rgba(16, 185, 129, 0.1);
+  border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+  font-size: 12px;
+}
+.layout-mobile-url-label {
+  color: #047857;
+  font-weight: 500;
+}
+.layout-mobile-url-link {
+  color: #059669;
+  text-decoration: underline;
+  word-break: break-all;
+}
+.layout-mobile-url-link:hover {
+  color: #0d9488;
+}
+
+/* 通用：钱包下拉等（桌面显示在 header-actions 内） */
+.student-summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.student-name {
+  font-size: 14px;
+  color: #374151;
+}
+
+.wallet-summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wallet-address {
+  background: #f3f4f6;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-family: monospace;
+  color: #4b5563;
+}
+
+.layout .btn-ghost {
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  padding: 4px 8px;
+  font-size: 13px;
+}
+
+.layout .btn-ghost:hover {
+  background: #f3f4f6;
+}
+
+.wallet-dropdown {
+  position: relative;
+}
+
+.wallet-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  min-width: 220px;
+  padding: 8px 14px 12px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.18);
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  z-index: 120;
+}
+
+.wallet-menu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.wallet-menu-label {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.wallet-menu-value {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.wallet-menu-action {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px 16px;
+  min-height: 44px;
+  justify-content: center;
+  color: #b91c1c;
+  border-color: rgba(185, 28, 28, 0.3);
+  background: rgba(254, 226, 226, 0.6);
+}
+.wallet-menu-action:hover {
+  background: rgba(254, 202, 202, 0.9);
+}
+
+.layout .btn-sm {
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
+.layout .btn-primary {
+  background: #10b981;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.layout .btn-secondary {
+  background: rgba(16, 185, 129, 0.12);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.layout .btn-soft {
+  background: rgba(16, 185, 129, 0.08);
+  color: #0f766e;
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}

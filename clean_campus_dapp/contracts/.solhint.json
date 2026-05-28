@@ -1,0 +1,14 @@
+{
+  "extends": "solhint:recommended",
+  "rules": {
+    "no-unused-vars": "off"
+  }
+}
+
+
+
+
+
+
+
+

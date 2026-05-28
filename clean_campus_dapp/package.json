@@ -1,0 +1,16 @@
+{
+  "name": "clean-campus-dapp",
+  "private": true,
+  "version": "1.0.0",
+  "description": "校园环保积分 DApp - 前端 + 后端",
+  "scripts": {
+    "dev": "concurrently -n fe,be -c blue,green \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\"",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "build": "npm run build --prefix frontend",
+    "start": "concurrently -n fe,be -c blue,green \"npm run start --prefix frontend\" \"npm run start --prefix backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

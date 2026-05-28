@@ -1,0 +1,92 @@
+.leaderboard-page {
+  min-height: 100vh;
+}
+
+.leaderboard-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.leaderboard-subtitle {
+  width: 100%;
+  margin: 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.leaderboard-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.leaderboard-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.leaderboard-item:hover {
+  background: #e9ecef;
+  transform: translateX(4px);
+}
+
+.leaderboard-item.current-user {
+  background: linear-gradient(135deg, #667eea20 0%, #764ba220 100%);
+  border: 2px solid #667eea;
+}
+
+.rank {
+  font-size: 24px;
+  font-weight: bold;
+  min-width: 60px;
+  text-align: center;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.user-address {
+  font-size: 12px;
+  color: #999;
+  font-family: monospace;
+}
+
+.points {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 20px;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.points .points-current {
+  font-size: 12px;
+  font-weight: normal;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+
+
+
+
+
+
+

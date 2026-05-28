@@ -1,0 +1,222 @@
+.report-page {
+  min-height: 100vh;
+}
+
+.report-user-info {
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: rgba(74, 124, 89, 0.08);
+  border-radius: 8px;
+  color: #2d5a3d;
+  font-weight: 500;
+}
+
+.report-login-prompt {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #fff8e6;
+  border: 1px solid #ffe58f;
+  border-radius: 12px;
+}
+
+.report-login-prompt p {
+  margin: 0 0 12px 0;
+  color: #666;
+}
+
+.report-hint {
+  margin-top: 12px;
+  color: #999;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* 行为类型自定义下拉：选项从下方弹出 */
+.form-group-select {
+  position: relative;
+}
+
+.report-select-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.report-select-placeholder {
+  color: #9ca3af;
+}
+
+.report-select-chevron {
+  flex-shrink: 0;
+  color: #6b7280;
+  transition: transform 0.2s ease;
+}
+
+.form-group-select-open .report-select-chevron {
+  transform: rotate(180deg);
+}
+
+.report-select-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: 2px 0 0 0;
+  padding: 0;
+  list-style: none;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-height: 260px;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.report-select-option {
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background 0.15s ease;
+}
+
+.report-select-option:last-child {
+  border-bottom: none;
+}
+
+.report-select-option:hover,
+.report-select-option.selected {
+  background: rgba(74, 124, 89, 0.08);
+  color: #2d5a3d;
+}
+
+.file-upload {
+  margin-top: 4px;
+}
+
+.file-upload-trigger {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px dashed rgba(0, 0, 0, 0.18);
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.file-upload-trigger:hover {
+  border-color: rgba(74, 124, 89, 0.5);
+  box-shadow: 0 2px 8px rgba(74, 124, 89, 0.08);
+  background: rgba(249, 250, 251, 0.9);
+}
+
+.file-upload-trigger input[type="file"] {
+  display: none;
+}
+
+.file-upload-icon {
+  font-size: 20px;
+}
+
+.file-upload-text {
+  font-size: 14px;
+  color: #475569;
+}
+
+.image-preview {
+  margin-top: 12px;
+  max-width: 300px;
+}
+
+.image-preview img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+}
+
+.reports-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.report-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.report-type {
+  font-weight: 600;
+  color: #333;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-approved {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.report-description {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.report-image {
+  max-width: 200px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.report-points {
+  font-weight: 600;
+  color: #4a7c59;
+  margin-bottom: 8px;
+}
+
+.report-date {
+  font-size: 12px;
+  color: #999;
+}
+
+
+
+
+
+
+
+
